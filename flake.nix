@@ -26,7 +26,7 @@
     ...
   } @ inputs: {
     nixosConfigurations = {
-      nixpad = nixpkgs.lib.nixosSystem {
+      blackbox = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         modules = [
