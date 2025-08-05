@@ -4,7 +4,6 @@
   imports =
     [
       ./hardware-configuration.nix  # Hardware scan results
-      ./laptop.nix                  # Laptop specific features
       ./users.nix
     ];
 
@@ -27,7 +26,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Networking
-  networking.hostName = "nixpad";
+  networking.hostName = "blackbox";
   networking.networkmanager.enable = true;
 
   # Time zone
